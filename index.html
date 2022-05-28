@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>HydroPuck</title>
+        <link rel="shortcut icon" href="images/tab-logo.png"/>
+
+        <link rel="stylesheet" href="./Styles/style.css">
+        <script src="./javascript/script.js" defer></script>
+
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="Logo"> <a href="#" class="logo"> <img src="./images/HydroLogo.png"> </a> </div>
+            <!-- Hamburger Menu -->
+            <a class="toggle-button">
+              <i class="fas fa-bars"></i>
+            </a>
+            <!-- Navigation Links -->
+            <div class="navbar-links" id="desktop-nav">
+                <ul>
+                    <li class="active"> <a href="#Home"  class="page-scroll"> Home </a> </li>
+                    <li> <a href="#About"  class="page-scroll"> About </a> </li>
+                    <li> <a href="#ProductTrailer"  class="page-scroll"> Product Trailer </a> </li>
+                    <li> <a href="#HowItWorks"  class="page-scroll"> How It Works </a> </li>
+                    <li> <a href="#MeetTheTeam"  class="page-scroll"> Meet The Team </a> </li>
+                </ul>
+                  <!-- Active Nav -->
+                  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
+                  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+                  <script type="text/javascript">
+                      $(document)
+                          .on('click', 'ul li', function () {
+                              $(this)
+                                  .addClass('active')
+                                  .siblings()
+                                  .removeClass('active')
+                          })
+                  </script>
+            </div>
+        </nav>
+
+        <!-- Parallax sections -->
+          <!-- Home -->
+          <section id="Home" class="home-section">
+                <div class="home-contents ">
+                    <div class="Banner-text homeColumn" style="width: 60%;">
+                        Helping you achieve your water intake goals<br> <br>
+                        <img src="./images/GooglePlay.png" class="google-play-home">
+                    </div>
+
+                    <div class="Banner-image homeColumn" data-aos="zoom-in" data-aos-duration="2000" style="background-attachment: fixed;  width: 40%; padding-right: 0px; float: right;">
+                        <div class="product-image"><img src="images/Product_Image.png"></div>
+                    </div>
+                </div>
+        </section>
+          <!-- About -->
+          <section id="About" class="aSection">
+            <div class="about-section">
+                <div class="contents" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                  <div class="Dark-Title"> <h1>About</h1> </div>
+                    <div class="about-text"><p>HydroPuck is a physical device known as “puck” that works with an android app to help you monitor your water intake based on a calculation made specifically for you. In order for you to monitor your water intake, you must place the water bottle that you drink water from on the puck so that it can measure how much water you’re drinking. If you are away from your puck, you can manually update your water intake through the app.</p></div>
+                </div>
+            </div>
+        </section>
+          <!-- Product Trailer -->
+          <section id="ProductTrailer">
+                      <div class="producttrailer-section">
+                        <div class="contents" data-aos="zoom-in"s data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="White-Title"> <h1>Product Trailer</h1> </div>
+                            <div class="ProductTrailer-Video">  <iframe width="560" height="315" src="https://www.youtube.com/embed/eZO1w0byc2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>              
+                        </div>
+                    </div>
+          </section>
+          <!-- How it works -->
+          <section id="HowItWorks">
+              <div class="howitworks-section">
+                  <div class="contents howitworks-content" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                      <div class="Dark-Title"> <h1>How It Works</h1> </div>
+                      <ul class="steps">
+                        <li class="step step--incomplete step--active">
+                          <span class="step__icon"></span>
+                          <span class="step__label"><p>Purchase the Puck device</p></span>
+                        </li>
+                        <li class="step step--incomplete step--inactive">
+                          <span class="step__icon"></span>
+                          <span class="step__label"> <p>Install the HydroPuck app on your Android device</p></span>
+                        </li>
+                        <li class="step step--incomplete step--inactive">
+                          <span class="step__icon"></span>
+                          <span class="step__label"><p>Create an account and pair your profile with the Puck</p> </span>
+                        </li>
+                        <li class="step step--incomplete step--inactive">
+                          <span class="step__icon"></span>
+                          <span class="step__label"> <p> Track your water intake, be reminded to drink water, and never lose your Puck device </p></span>
+                        </li>
+                      </ul>
+                  </div>
+              </div>
+          </section>
+          <!-- Meet the team -->
+          <section id="MeetTheTeam">
+              <div class="meettheteam-section">
+                  <div class="contents" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                      <section class="section-team">
+                        <div class="White-Title"> <h1>Meet the Team</h1> </div>
+                          <div class="TeamMembers">
+                              <!-- Josh -->
+                              <div class="single-person">
+                                  <div class="person-image"> <img src="images/josh.jpg" alt=""> </div>
+                                  <div class="person-info">
+                                      <h3 class="full-name">Josh Moffat</h3>
+                                      <span class="speciality">Team Leader  <br> App Developer </span>
+                                  </div>
+                              </div>
+                              <!-- Noemi -->
+                              <div class="single-person">
+                                  <div class="person-image"> <img src="images/noemi.jpg" alt=""> </div>
+                                  <div class="person-info">
+                                      <h3 class="full-name">Noemi Roestel</h3>
+                                      <span class="speciality">Product Designer <br> Product Developer</span>
+                                  </div>
+                              </div>
+                              <!-- Onyinye -->
+                              <div class="single-person">
+                                  <div class="person-image"> <img src="images/onyinye.jpg" alt=""> </div>
+                                  <div class="person-info">
+                                      <h3 class="full-name">Onyinye Agetu</h3>
+                                      <span class="speciality">UX/UI Researcher <br> Web Developer</span>
+                                  </div>
+                              </div>
+                              <!-- Yara -->
+                              <div class="single-person">
+                                  <div class="person-image"> <img src="images/yara.jpg" alt=""> </div>
+                                  <div class="person-info">
+                                      <h3 class="full-name">Yara Saadaldin</h3>
+                                      <span class="speciality">UX/UI Designer & Researcher <br> Web Developer</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+                </div>
+            </section>
+        </body>
+
+        <footer>
+                <p class="footer-text">@ 2022 HydroPuck.</p>
+                <img src="./images/GooglePlay.png" class="google-play">
+        </footer>
+
+    </html>
